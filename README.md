@@ -56,6 +56,13 @@ By default, all scripts have CSV output. You can use Linux's `column` to prettif
     Earth 3D                        com.jmsys.earth3d                       Dokon Jang               0          Gratuit  1           12            3.4MB    4.05    500 000+
     [...]
 
+### Fetch reviews
+    $ python reviews.py
+    Usage: reviews.py request [package] [offset]
+    Returns 20 reviews for a given app package.
+
+    $ python reviews.py com.google.android.gm
+
 ### Browse categories
 
 You can list all app categories this way:

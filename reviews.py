@@ -10,13 +10,6 @@ from config import *
 from googleplay import GooglePlayAPI
 from helpers import sizeof_fmt
 
-# documentVersion: "0.9.6"
-# timestampMsec: 1391263931919
-# starRating: 2
-# title: "Still doesn\'t help"
-# comment: "No pop account access so does not help me with linking my workspace email"
-# commentId: "gp:AOqpTOG3eCEN9z45LVqgX6fGqEKgLnjfH9hmQ2HioQv3s1dGdlLJGVqWjX1FovY7V9NmjzeYA0E14BeNrbam_aE"
-
 def print_header_line():
     l = [ "authorName",
             "url",
