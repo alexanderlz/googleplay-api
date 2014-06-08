@@ -113,11 +113,11 @@ class GooglePlayAPI(object):
                                 "has_permission": "1",
                                 "source": "android",
                                 "androidId": self.androidId,
-                                "app": "com.android.vending",
-                                #"client_sig": self.client_sig,
-                                "device_country": "fr",
-                                "operatorCountry": "fr",
-                                "lang": "fr",
+                                "app": "com.google.android.gsf",
+                                "client_sig": "38918a453d07199354f8b19af05ec6562ced5788",
+                                "device_country": "us",
+                                "operatorCountry": "us",
+                                "lang": "en",
                                 "sdk_version": "16"}
             headers = {
                 "Accept-Encoding": "",
@@ -147,7 +147,7 @@ class GooglePlayAPI(object):
                                     "X-DFE-Device-Id": self.androidId,
                                     "X-DFE-Client-Id": "am-android-google",
                                     #"X-DFE-Logging-Id": self.loggingId2, # Deprecated?
-                                    "User-Agent": "Android-Finsky/3.7.13 (api=3,versionCode=8013013,sdk=16,device=crespo,hardware=herring,product=soju)",
+                                    "User-Agent": "Android-Finsky/3.10.13 (api=3,versionCode=8016014,sdk=15,device=GT-I9300,hardware=aries,product=GT-I9300)",
                                     "X-DFE-SmallestScreenWidthDp": "320",
                                     "X-DFE-Filter-Level": "3",
                                     "Accept-Encoding": "",
@@ -238,7 +238,7 @@ class GooglePlayAPI(object):
         message = self.executeRequestApi2(path)
         return message.payload.listResponse
     
-    def reviews(self, packageName, filterByDevice=False, sort=2, nb_results=None, offset=None):
+    def reviews(self, packageName, filterByDevice=False, sort=1, nb_results=None, offset=None):
         """Browse reviews.
         packageName is the app unique ID.
         If filterByDevice is True, return only reviews for your device."""
